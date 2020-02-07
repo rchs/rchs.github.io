@@ -198,6 +198,7 @@ header{
 .section-title.big{
   font-size: 60px;
   line-height: 73px;
+  padding-top: 5rem;
 }
 .relative-container{
   position: relative;
@@ -438,6 +439,92 @@ header{
   background-color: transparent;
   box-shadow: none;
   border-color: #ccc;
+}
+.work-with-us .fp-tableCell{
+  display: flex;
+  flex-direction: column;
+}
+.work-with-us #underline{
+  margin: 5rem auto;
+}
+.bg-1c{
+  padding:2rem ;
+  background-color: #1C1C1C;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.section-title.diff{
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 3.5rem;
+}
+.rchs-diff{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.rchs-diff li{
+  /* width: 190px; */
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rchs-diff .box{
+  height: 120px;
+  width: 120px;
+  background-color: #c4c4c4;
+  margin: 0 auto;
+}
+.rchs-diff p{
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.vacancy-list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+}
+.company-name{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding-bottom: 1rem;
+}
+.vacancy .fp-tableCell{
+  flex-direction: column;
+}
+.vacancy .fp-scrollable{
+  width: 100%;
+}
+.vacancy-list ul{
+  display: flex;
+  flex-direction: column;
+}
+.vacancy-list li{
+  padding: 10px 15px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.vacancy-list a{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.vacancy-list .pos-name{
+  font-weight: 700;
+}
+.vacancy-list .error{
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -748,6 +835,33 @@ header{
     padding: 0.5rem 0 1rem;
   }
 }
+@media screen and (max-width: 575px){
+  .work-with-us #underline{
+    margin: 3rem auto;
+  }
+  .bg-1c{
+    padding: 1rem;
+    display: none;
+  }
+  .section-title.diff{
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 2.5rem;
+  }
+  .vacancy-list{
+    padding: 0 1rem;
+  }
+  .vacancy-list li{
+    padding:10px 0px 15px;
+  }
+  .vacancy-list a{
+    font-size: 14px;
+    flex-direction: column;
+  }
+  .vacancy-list .pos-action{
+    display: none;
+  }
+}
 @media screen and (max-width:320px){
   .rhcs{
     top: 56%;
@@ -779,6 +893,9 @@ header{
     font-size: 18px;
     line-height: 24px;
     padding: 0.5rem 0 1rem;
+  }
+  .work-with-us .section-title.big{
+    font-size: 32px;
   }
 }
 .full-flex{
