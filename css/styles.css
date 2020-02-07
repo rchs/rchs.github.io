@@ -573,6 +573,9 @@ hr{
   flex: 0 0 50%;
   padding-bottom: 2.5rem;
 }
+.detail .section-title.diff{
+  padding: 1rem 0 2.5rem;
+}
 
 /* Responsive */
 @media (max-width: 768px){
