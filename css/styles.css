@@ -185,7 +185,7 @@ header{
 .rchs-home .fp-tableCell{
   align-items: flex-end;
 }
-.content-block{
+.content-block{font-size: 32px;
   width: 64%;
 }
 .content-block p{
@@ -210,12 +210,13 @@ header{
 }
 .list{
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 .list .block{
+  min-height: 352px;
   max-height: 352px;
   width: 100%;
-  display: flex;
+  display: table;
   justify-content: center;
   align-items: center;
   transition: all 450ms;
@@ -550,6 +551,8 @@ header{
   .list .block{
     flex: 0 0 calc(100%/3);
     max-height: 150px;
+    min-height: 150px;
+    height: 100%;
   }
   .list .block a{
     padding: 1.5rem;
@@ -587,4 +590,123 @@ header{
   .blockquote{
     padding-left: 4rem;
   }
+}
+@media screen and (max-width: 767px){
+  .rchs-home .fp-tableCell .container{
+    flex-direction: column;
+  }
+  .content-block{
+    width: 100%;
+    order: 2;
+  }
+  .relative-container{
+    order: 1;
+    min-height: 250px;
+  }
+  .tag-line{
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .rhcs{
+    background-size: 66%;
+    top: 20%;
+    left: 31%;
+  }
+  .list .block{
+    flex: 0 0 calc(100%/2);
+    min-height: 150px;
+    height: 100%;
+    display: table;
+  }
+  .block .block-content{
+    font-size: 16px;
+  }
+  .section-footer{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .section-title{
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0.8rem;
+  }
+  .title{
+    font-size: 16px;
+  }
+  .work-block p{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .work-block #underline{
+    display: none;
+  }
+  .work-block{
+    margin-bottom: 18px;
+  }
+  .section-title.small{
+    font-size: 18px;
+  }
+  .inside-say {
+    font-size: 25px;
+    line-height: 8px;
+  }
+  .sub-title{
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  .blockquote{
+    padding-left: 0;
+  }
+  .blockquote::before{
+    z-index: -1;
+  }
+  .blockquote::before {
+    z-index: -1;
+    opacity: 0.3;
+  }
+  .blockquote p {
+    font-size: 15px;
+    line-height: 27px;
+  }
+  .navbar li {
+    font-size: 32px;
+    line-height: 60px;
+  }
+  .company-info .pt-8{
+    padding-top: 3rem;
+  }
+  .close{
+    right: 10px;
+  }
+  .name-disp h2{
+    font-size: 32px;
+  }
+  .company-info p{
+    font-size: 14px;
+  }
+  .company-info #underline{
+    display: none;
+  }
+  .founder h4, .contact h4{
+    font-size: 14px;
+    line-height: 10px;
+  }
+}
+@media screen and (max-width:320px){
+  .rhcs{
+    top: 56%;
+  }
+  .block .block-content{
+    font-size: 13px;
+  }
+  .title{
+    line-height: 18px;
+    margin-bottom: 4px;
+  }
+  .blockquote p{
+    line-height: 23px;
+  }
+}
+.test{
+  flex: 1;
 }
