@@ -526,7 +526,53 @@ header{
   width: 100%;
   text-align: center;
 }
-
+.detail .fp-tableCell{
+  flex-direction: column;
+}
+.detail .fp-scrollable{
+  width: 100%;
+}
+hr{
+  border-top: 1px solid rgba(255,255,255,.9);
+  margin: 1.4rem auto;
+  width: 100%;
+}
+.detail-cont{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.detail-cont h2{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 4rem 0 1.2rem 0;
+}
+.detail-cont h3{
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 4rem 0 1.2rem 0;
+}
+.detail-cont ul{
+  padding-left: 15px;
+  list-style: disc;
+}
+.detail-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.detail-wrap .detail-box{
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 50%;
+  padding-bottom: 2.5rem;
+}
 
 /* Responsive */
 @media (max-width: 768px){
@@ -724,6 +770,11 @@ header{
   .blockquote{
     padding-left: 4rem;
   }
+  .detail-wrap .detail-box{
+    flex: 0 0 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @media screen and (max-width: 767px){
   .rchs-home .fp-tableCell .container{
@@ -860,6 +911,19 @@ header{
   }
   .vacancy-list .pos-action{
     display: none;
+  }
+  .detail-cont h2{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .detail p{
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .detail-cont h3{
+    font-size: 18px;
+    line-height: 22px;
+    padding: 2rem 0 1.2rem 0;
   }
 }
 @media screen and (max-width:320px){
