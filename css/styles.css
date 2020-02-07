@@ -7,6 +7,9 @@ body {
   text-align: left;
   background-color: #000;
 }
+img{
+  max-width: 100%;
+}
 .pt-6{
   padding-top: 4rem;
 }
@@ -226,6 +229,7 @@ header{
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 0 15px;
 }
 .list li:hover a{
   background-color: #fff;
@@ -390,6 +394,11 @@ header{
 
 
 /* Responsive */
+@media (min-width: 768px){
+  .container{
+     max-width: 90%;
+  }
+}
 @media screen and (max-width:1366px){
   .work-block {
     position: relative;
@@ -419,4 +428,157 @@ header{
     line-height: 28px;
   }
 }
-
+@media screen and (max-width:1200px){
+  .content-block{
+    width: 60%;
+  }
+  .tag-line{
+    font-size: 66px;
+    line-height: 80px;
+  }
+  .rchs{
+    top: -11%;
+    left: -25%;
+  }
+  .list .block {
+    max-height: 270px;
+  }
+  .work-block {
+    padding-left: 5.5rem;
+    padding-top: 1.1rem;
+  }
+  .work-block span {
+    top: -78px;
+    left: 38px;
+  }
+  .work-block:nth-child(even) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.1rem;
+  }
+  .work-block:nth-child(even) span {
+    top: -60px;
+    left: -25px;
+  }
+  .inside-say {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .why-we-do-it #underline {
+    margin: 30px auto;
+  }
+  .sub-title {
+    font-size: 23px;
+    line-height: 23px;
+  }
+  .blockquote p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .blockquote-footer{
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .blockquote::before{
+    width: 75px;
+    height: 75px;
+    background-size: contain;
+    left: -4.3rem;
+  }
+  .navbar li {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 70px;
+  }
+  .block .block-content {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width:1024px){
+  .work-block {
+    padding-left: 0.5rem;
+    padding-top: 1.1rem;
+  }
+  .work-block span {
+    top: -78px;
+    left: -28px;
+  }
+  .work-block:nth-child(even) span{
+    left: 0;
+  }
+  .title{
+    font-size: 21px;
+  }
+  .work-block p{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:991px){
+  .rhcs{
+    background-size: 95%;
+    top:-11%;
+  }
+  .work-block span{
+    font-size: 92px;
+  }
+  .work-block span{
+    top: -40px;
+    left: -20px;
+  }
+  .work-block:nth-child(even) span{
+    top:-30px;
+  }
+  .blockquote::before{
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    left: -3.3rem;
+  }
+}
+@media screen and (max-width:768px){
+  .tag-line {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .content-block p {
+    width: 100%;
+  }
+  .list{
+    flex-wrap: wrap;
+  }
+  .list .block{
+    flex: 0 0 calc(100%/3);
+    max-height: 150px;
+  }
+  .list .block a{
+    padding: 1.5rem;
+  }
+  .list .block img{
+    max-height: 80px;
+  }
+  .work-block,.work-block:nth-child(even){
+    padding: 0;
+  }
+  .work-block span, .work-block:nth-child(even) span{
+    top: -34px;
+    left: -21px;
+    font-size: 42px;
+  }
+  .title {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .work-block{
+    margin-bottom: 15px;
+  }
+  .work-block p{
+    margin-bottom: 0.3rem;
+  }
+  .work-block #underline{
+    margin: 0 0 1rem;
+  }
+  .work-block .pt-4{
+    padding-top: 0!important;
+  }
+}
