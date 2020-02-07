@@ -155,7 +155,7 @@ ul{
 .work-block:nth-child(even){
   padding-left: 2.5rem;
   padding-right: 6.5rem;
-  padding-top: 6.1rem;
+  padding-top: 9.1rem;
 }
 .work-block span{
   position: absolute;
@@ -168,7 +168,7 @@ ul{
 }
 .work-block:nth-child(even) span{
   left: 0px;
-  top: 0;
+  top: 47px;
 }
 .title{
   font-weight: bold;
@@ -181,20 +181,95 @@ ul{
   line-height: 24px;
   font-weight: 300;
 }
+
+/* why we do it */
+.inside-say{
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+.why-we-do-it #underline{
+  margin: 60px auto;
+}
+.sub-title{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 2.12rem;
+}
+.blockquote{
+  position: relative;
+  padding-left: 1rem;
+}
+.blockquote p{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+.blockquote::before{
+  position: absolute;
+  content: '';
+  background-image: url(../images/quote.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: -0.5rem;
+  left: -5.5rem;
+  width: 103px;
+  height: 103px;
+}
+.blockquote-footer{
+  color: #fff;
+  opacity: 0.9;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 25px 0;
+}
 .section{
   color: #fff;
 }
 
 
 
-/* 1366 */
-/* .work-block {
-  position: relative;
-  padding-left: 7.5rem;
-  padding-top: 3.1rem;
+
+
+/* Responsive */
+@media screen and (max-width:1366px){
+  .work-block {
+    position: relative;
+    padding-left: 7.5rem;
+    padding-top: 3.1rem;
+  }
+  .work-block:nth-child(even) {
+    padding-left: 2.5rem;
+    padding-right: 4.5rem;
+    padding-top: 5.1rem;
+  }
+  .work-block:nth-child(even) span{
+    top:0;
+  }
+  .blockquote p{
+    font-size: 20px;
+  }
+  .inside-say{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .why-we-do-it #underline{
+    margin: 40px auto;
+  }
+  .sub-title{
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
-.work-block:nth-child(even) {
-  padding-left: 2.5rem;
-  padding-right: 4.5rem;
-  padding-top: 5.1rem;
-} */
+
