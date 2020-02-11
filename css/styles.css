@@ -171,6 +171,9 @@ header{
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.navbar li:hover a{
+  letter-spacing: 10px;
+}
 .navbar::after{
   width: 100px;
   height: 1px;
@@ -178,7 +181,9 @@ header{
   content: '';
   margin-top: 25px;
 }
-
+.menu-container{
+  cursor: pointer;
+}
 
 
 /* ****************** */
@@ -371,6 +376,7 @@ header{
 }
 .section{
   color: #fff;
+  padding: 1rem 0;
 }
 
 /* Modal full screen */
