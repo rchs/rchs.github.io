@@ -240,6 +240,23 @@ header{
 .scroll span{
   margin-left: 10px;
 }
+.scroll img{
+  animation: move 2000ms  1000ms infinite;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);  
+  }
+  25% {
+    transform: translateY(15px);  
+  }
+  50% {
+    transform: translateY(-15px);  
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .tag-line{
   font-weight: bold;
   font-size: 80px;
