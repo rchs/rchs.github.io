@@ -1,0 +1,12 @@
+{
+  "name": "Roaches",
+  "short_name": "rchs",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff"
+  "description": "The roaches is a group of technology companies and people that challenge the status quo across multiple verticals. As such, we work with people who have the smarts, exposure, and grit to create such solutions. Currently our portfolio includes HoneyGuide, Bhoos, and Diagnal.",
+  "icons": [{
+    "src": "images/icon.png",
+    "sizes": "192x192"
+  }]
+}

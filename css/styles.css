@@ -305,8 +305,17 @@ header{
 .list li:hover a{
   background-color: #fff;
 }
-.list li:hover img{
-  filter: invert(1);
+.list li img:nth-child(2){
+  opacity: 0;
+  display: none;
+}
+.list li:hover img:nth-child(1){
+  opacity: 0;
+  display: none;
+}
+.list li:hover img:nth-child(2){
+  opacity: 1;
+  display: block;
 }
 .block .block-content{
   font-weight: bold;
