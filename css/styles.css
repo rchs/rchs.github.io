@@ -589,9 +589,11 @@ header{
   justify-content: space-between;
   font-size: 16px;
   padding: 10px 15px 15px;
+  align-items: center;
 }
 .vacancy-list .pos-name{
   font-weight: 700;
+  flex: 0 0 calc(100%/3);
 }
 .vacancy-list .error{
   width: 100%;
