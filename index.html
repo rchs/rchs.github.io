@@ -17,7 +17,13 @@
   <meta property="og:site_name" content="Roaches" />
   <meta property="og:image" content="images/og-image.jpg" />
   <meta property="og:image:secure_url" content="images:/og-image.jpg" />
-
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000"> 
+  <link rel="mmainfest" href="/manifest.webmainfest">
   <!-- Bootstrap CSS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -48,8 +54,6 @@
       <nav class="overlay-menu-nav">
         <ul class="navbar">
           <li><a href="work-with-us.html">work with us</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <p><a href="mailto:info@roaches.dev">info@roaches.dev</a></p>
@@ -66,51 +70,50 @@
           <div id="underline"></div>
           <p>Roaches is a group of technology companies and people that challenge the status quo across multiple
             verticals.</p>
-          <p class="pt-5"></p>
+          <div class="pt-2"></div>
+          <a href="work-with-us.html" class="btn btn-primary">Join us</a>
         </div>
         <div class="relative-container flex-1">
           <div class="absolute-container rhcs" style="background-image: url(images/big-roaches.png)"></div>
+          <div class="scroll">
+            <a href="#portfolio"><img src="images/scrollDown.png" alt=""><span>Scroll to see more</span></a>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Second section portfolio-->
     <div class="section portfolio">
-      <div class="container-fluid d-flex flex-column">
+      <div class="container d-flex flex-column">
         <h2 class="section-title">Portfolio</h2>
         <div class="full-flex">
           <ul class="list">
-            <li class="block">
+            <li>
               <a data-toggle="modal" data-target="#exampleModalLong">
-                <div class="block-content">
-                  <img src="images/bhoos-logo.png" alt="Bhoos Logo">
-                </div>
+                <img src="images/bhoos-logo.png" alt="Bhoos Logo white" class="img-fluid">
+                <img src="images/bhoos.png" alt="Bhoos Logo color" class="img-fluid">
               </a>
             </li>
-            <li class="block">
+            <li>
               <a href="#">
-                <div class="block-content">
-                  <img src="images/diagnal-logo.png" alt="Diagnal Logo">
-                </div>
+                <img src="images/diagnal-logo.png" alt="Diagnal Logo white" class="img-fluid">
+                <img src="images/diagnal.png" alt="Diagnal Logo color" class="img-fluid">
               </a>
             </li>
-            <li class="block">
+            <li>
               <a href="#">
-                <div class="block-content">
-                  <img src="images/honeyguide-logo.png" alt="Honeyguide Logo">
-                </div>
+                <img src="images/honeyguide-logo.png" alt="Honeyguide Logo white" class="img-fluid">
+                <img src="images/honeyguide.png" alt="Honeyguide Logo color" class="img-fluid">
               </a>
             </li>
-            <li class="block">
+            <li>
               <a href="#">
-                <div class="block-content">
-                  other.co
-                </div>
+                other.co
               </a>
             </li>
           </ul>
         </div>
-        <p class="section-footer">To be a part of us, contact us at <a href="mailto:this@gmail.com">this@gmail.com</a>
+        <p class="section-footer">To be a part of us, contact us at <a href="mailto:info@roaches.dev">info@roaches.dev</a>
         </p>
       </div>
     </div>
@@ -156,19 +159,12 @@
     <!-- Why we do it -->
     <div class="section why-we-do-it">
       <div class="container d-flex flex-column">
-        <h2 class="section-title small">Why we do it?</h2>
         <div class="row justify-content-center">
           <div class="col-lg-10 col-xl-9">
-            <h2 class="inside-say">Because we can!!!</h2>
-            <p id="underline"></p>
-            <p class="sub-title">why roaches</p>
+            <p class="sub-title">WHY are we called Roaches</p>
             <blockquote class="blockquote">
-              <p class="mb-0">Because, “Apparently the most likely animals to be left alive after a nuclear war are
-                cockroaches, because they're so hard to kill. That's what you want to be as a startup, initially.
-                Instead of a beautiful but fragile flower that needs to have its stem in a plastic tube to support
-                itself, better to be small, ugly, and indestructible.”</p>
+              <p class="mb-0">Because, “Apparently the most likely animals to be left alive after a nuclear war are cockroaches, because they're so hard to kill. That's what you want to be as a startup, initially. Instead of a beautiful but fragile flower that needs to have its stem in a plastic tube to support itself, better to be small, ugly, and indestructible.”</p>
               <footer class="blockquote-footer">Paul Graham, <cite title="Source Title">Y Combinator.</cite></footer>
-              <p>Also we named the company Roaches to keep the Butterflies away.</p>
             </blockquote>
 
           </div>
