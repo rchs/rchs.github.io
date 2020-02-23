@@ -648,6 +648,9 @@ hr{
 .detail .section-title.diff{
   padding: 1rem 0 2.5rem;
 }
+.detail .detail-box a{
+  text-decoration: underline;
+}
 
 /* Responsive */
 @media (max-width: 768px){
