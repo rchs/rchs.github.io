@@ -6,25 +6,29 @@ body {
   line-height: 1.5;
   text-align: left;
   background-color: #000;
+  color: #999;
+  font-size: 16px;
 }
 .btn{
   padding: 1rem 1.75rem;
   border-radius: 0;
   background: transparent;
-  color: #fff;
-  border-color: #fff;
+  color: #eaeaea;
+  border-color: #eaeaea;
 }
 .btn-primary{
   transition: 450ms all;
   opacity: 1;
   font-weight: 700;
   text-transform: uppercase;
+  background-color: transparent;
 }
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary:not(:disabled):not(.disabled):active:focus{
-  background-color: transparent;
-  border-color: #fff;
+  background-color: #eaeaea;
+  border-color: #eaeaea;
   box-shadow: none;
   opacity: 0.7;
+  color: #000;
 }
 a:not([href]) {
   cursor: pointer;
@@ -61,11 +65,14 @@ p{
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
+  color: #999;
 }
 ul{
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: inherit;
+  color: #999;
 }
 #underline{
   width: 100px;
@@ -116,7 +123,7 @@ header{
 }
 .button-container span {
   position: absolute;
-  background: #fff;
+  background: #eaeaea;
   border: none;
   height: 2px;
   width: 100%;
@@ -154,7 +161,7 @@ header{
 }
 .overlay-menu p{
   text-align: right;
-  color: #fff;
+  color: #eaeaea;
 }
 .overlay-menu-nav{
   margin-top: 6rem;
@@ -172,7 +179,7 @@ header{
   line-height: 100px;
   text-align: right;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #eaeaea;
 }
 .navbar li:hover a{
   letter-spacing: 10px;
@@ -201,7 +208,7 @@ header{
   line-height: 39px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #eaeaea;
   padding: 4rem 0 1.2rem 0;
 }
 .section-title.small{
@@ -264,7 +271,7 @@ header{
   font-weight: bold;
   font-size: 80px;
   line-height: 98px;
-  color: #FFFFFF;
+  color: #eaeaea;
 }
 .rhcs{
   height: 100%;
@@ -286,7 +293,7 @@ header{
   flex: 0 0 calc(100%/4);
   min-height: 240px;
   padding: 6px;
-  color: #fff;
+  color: #eaeaea;
   transition: 300ms all;
 }
 .list li a{
@@ -306,7 +313,7 @@ header{
   color: #000;
 }
 .list li:hover a{
-  background-color: #fff;
+  background-color: #eaeaea;
 }
 .list li img:nth-child(2){
   opacity: 0;
@@ -325,7 +332,7 @@ header{
   font-size: 40px;
   line-height: 49px;
   letter-spacing: 0.1em;
-  color: #FFFFFF;
+  color: #eaeaea;
   text-transform: uppercase;
 }
 .block:hover .block-content{
@@ -333,7 +340,7 @@ header{
 }
 .section-footer{
   text-align: center;
-  color: #fff;
+  color: #eaeaea;
 }
 .section-footer a{
   font-weight: bold;
@@ -367,7 +374,7 @@ header{
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
-  color: #FFFFFF;
+  color: #eaeaea;
 }
 .work-block p{
   font-size: 16px;
@@ -382,7 +389,7 @@ header{
   line-height: 73px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #999;
   margin-top: 0.7rem;
   margin-bottom: 1rem;
 }
@@ -398,7 +405,7 @@ header{
   line-height: 39px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #eaeaea;
   margin-bottom: 2.12rem;
 }
 .blockquote{
@@ -409,7 +416,7 @@ header{
   font-weight: 300;
   font-size: 24px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #999;
   opacity: 0.9;
 }
 .blockquote::before{
@@ -424,7 +431,7 @@ header{
   height: 103px;
 }
 .blockquote-footer{
-  color: #fff;
+  color: #999;
   opacity: 0.9;
   font-size: 24px;
   line-height: 36px;
@@ -432,7 +439,7 @@ header{
   text-align: right;
 }
 .section{
-  color: #fff;
+  color: #eaeaea;
   padding: 1rem 0;
 }
 
@@ -444,7 +451,7 @@ header{
 }
 .modal-content{
   background-color: #000;
-  color: #fff;
+  color: #999;
   height: auto;
   min-height: 100%;
   border-radius: 0;
@@ -463,13 +470,13 @@ header{
   font-weight: bold;
   font-size: 60px;
   line-height: 73px;
-  color: #FFFFFF;
+  color: #eaeaea;
 }
 .founder h4,.contact h4{
   font-weight: bold;
   font-size: 28px;
   line-height: 34px;
-  color: #FFFFFF;
+  color: #eaeaea;
   padding-top: 2rem;
   padding-bottom: 0.6rem;
 }
@@ -485,7 +492,7 @@ header{
   font-size: 32px;
   line-height: 39px;
   display: flex;
-  color: #FFFFFF;
+  color: #eaeaea;
   padding: 3.5rem 0 3rem;
 }
 .form-control{
@@ -495,10 +502,10 @@ header{
   border-left: 0;
   border-right: 0;
   border-color: #ccc;
-  color: #fff;
+  color: #999;
 }
 .form-control:focus{
-  color: #fff;
+  color: #999;
   background-color: transparent;
   box-shadow: none;
   border-color: #ccc;
@@ -529,7 +536,7 @@ header{
   line-height: 29px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #eaeaea;
   padding-bottom: 3.5rem;
 }
 .rchs-diff{
@@ -554,7 +561,7 @@ header{
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #999;
   margin-bottom: 0;
 }
 .vacancy-list{
@@ -568,7 +575,7 @@ header{
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #eaeaea;
   padding-bottom: 1rem;
 }
 .vacancy-list ul li:hover .pos-action{
@@ -624,7 +631,7 @@ hr{
   line-height: 39px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #eaeaea;
   padding: 4rem 0 1.2rem 0;
 }
 .detail-cont h3{
@@ -632,7 +639,7 @@ hr{
   line-height: 29px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #eaeaea;
   padding: 4rem 0 1.2rem 0;
 }
 .detail-cont ul{
@@ -659,6 +666,7 @@ hr{
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #eaeaea;
 }
 .key-diff{
   margin-bottom: 50px;
@@ -878,6 +886,12 @@ hr{
   }
 }
 @media screen and (max-width: 767px){
+  body{
+    font-size: 14px;
+  }
+  header{
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
   .rchs-home .fp-tableCell .container{
     flex-direction: column;
   }
@@ -1014,7 +1028,8 @@ hr{
     position: relative;
     font-size: 14px;
     flex-direction: column;
-    padding: 10px 10px 10px 5px ;
+    padding: 10px 10px 10px 5px;
+    align-items: flex-start;
   }
   .vacancy-list ul .pos-action {
     position: absolute;
@@ -1023,7 +1038,7 @@ hr{
     margin-top: -12px;
   }
   .detail-cont h2{
-    font-size: 20px;
+    font-size: 24px;
     line-height: 28px;
   }
   .detail p{
@@ -1060,6 +1075,12 @@ hr{
   }
   .detail-wrap .detail-box,.detail .footer-text{
     padding: 0 15px;
+  }
+  .footer-text{
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+
   }
 }
 @media screen and (max-width:320px){
