@@ -26,6 +26,9 @@ body {
   box-shadow: none;
   opacity: 0.7;
 }
+a:not([href]) {
+  cursor: pointer;
+}
 img{
   max-width: 100%;
 }
@@ -534,7 +537,7 @@ header{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.rchs-diff li{
+.rchs-diff li, .rchs-diff li a{
   /* width: 190px; */
   height: 170px;
   display: flex;
@@ -650,6 +653,18 @@ hr{
 }
 .detail .detail-box a{
   text-decoration: underline;
+}
+.key-diff h3{
+  font-size: 32px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.key-diff{
+  margin-bottom: 50px;
+}
+.key-diff p{
+  line-height: 24px;
 }
 
 /* Responsive */
