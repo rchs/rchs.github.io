@@ -89,7 +89,7 @@
               to create companies that can bring down the goliaths.</p>
             <div class="pt-10 d-none d-sm-block"></div>
             <div class="pt-5 d-block d-sm-none"></div>
-            <a href="#vacancies" class="btn btn-primary" data-anchore="vacancies">See open positions</a>
+            <a href="#vacancies" class="btn btn-primary" id="scroll">See open positions</a>
           </div>
         </div>
       </div>
@@ -128,12 +128,13 @@
           </div>
         </div>
       </div>
-      <div class="container d-flex flex-column vacancies">
+      <div class="container d-flex flex-column vacancies" id="vacancies">
         <div class="row justify-content-center flex-column">
           <h2 class="section-title diff">Current Open positions</h2>
           <div class="vacancy-list">
             <h3 class="company-name">HoneyGuide</h3>
-            <p>HoneyGuide is an online travel agency specializing in mountain travel. We make sure that men and mountains meet more often. (Of course women too, but the rhyme was too good to pass.)</p>
+            <p>HoneyGuide is an online travel agency specializing in mountain travel. We make sure that men and
+              mountains meet more often. (Of course women too, but the rhyme was too good to pass.)</p>
             <ul>
               <li>
                 <a href="careers/honeyguide-technical-lead.html">
@@ -151,7 +152,8 @@
           </div>
           <div class="vacancy-list">
             <h3 class="company-name">Bhoos</h3>
-            <p>Bhoos is a mobile gaming company specializing in card games. We bring people together through games that they grew up with.</p>
+            <p>Bhoos is a mobile gaming company specializing in card games. We bring people together through games that
+              they grew up with.</p>
             <ul>
               <li>
                 <a href="careers/bhoos-frontend-developer.html">
@@ -169,7 +171,8 @@
           </div>
           <div class="vacancy-list">
             <h3 class="company-name">Diagnal</h3>
-            <p>Diagnal is an electronic medical record system loved by both doctors and patients alike. We make technology less painful for doctors and health records more accessible to patients.</p>
+            <p>Diagnal is an electronic medical record system loved by both doctors and patients alike. We make
+              technology less painful for doctors and health records more accessible to patients.</p>
             <ul>
               <li>
                 <a href="careers/diagnal-backend-developer.html">
@@ -199,7 +202,8 @@
           </div>
           <div class="vacancy-list">
             <h3 class="company-name">Plutus</h3>
-            <p>Plutus makes accounting and tax management software for SMEs. We marry intuitive bookkeeping with actionable insights so businesses can focus on the thing that matters most: growth.</p>
+            <p>Plutus makes accounting and tax management software for SMEs. We marry intuitive bookkeeping with
+              actionable insights so businesses can focus on the thing that matters most: growth.</p>
             <ul>
               <li>
                 <a href="careers/plutus-technical-lead.html">
@@ -278,10 +282,10 @@
       //Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors: ['vacancies'],
+      anchors: ['vacancy'],
       navigation: false,
       navigationPosition: 'right',
-      navigationTooltips: ['vacancies'],
+      navigationTooltips: ['vacancy'],
       showActiveTooltip: false,
       slidesNavigation: false,
       slidesNavPosition: 'bottom',
@@ -306,7 +310,6 @@
       offsetSections: false,
       resetSliders: false,
       fadingEffect: false,
-      // normalScrollElements: '#element1, .element2',
       scrollOverflow: true,
       scrollOverflowReset: false,
       scrollOverflowOptions: null,
@@ -332,6 +335,13 @@
       $('#menu-overlay').toggleClass('open');
     });
   </script>
+  <!-- <script>
+    $("#scroll").click(function (e) {
+      e.preventDefault();
+      var aid = $("#vacancies");
+      $('html,body').animate({ scrollTop: $(aid).offset().top }, 'slow');
+    });
+  </script> -->
 </body>
 
 </html>
