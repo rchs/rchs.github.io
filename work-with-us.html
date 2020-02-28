@@ -16,8 +16,31 @@
     content="The roaches is a group of technology companies and people that challenge the status quo across multiple verticals. As such, we work with people who have the smarts, exposure, and grit to create such solutions. Currently our portfolio includes HoneyGuide, Bhoos, and Diagnal." />
   <meta property="og:site_name" content="Roaches" />
   <meta property="og:image" content="images/og-image.jpg" />
-  <meta property="og:image:secure_url" content="images:/og-image.jpg" />
-
+  <meta property="og:image:secure_url" content="images/og-image.jpg" />
+  <!-- Fav Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#000">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+  <link rel="mmainfest" href="/manifest.webmainfest">
   <!-- Bootstrap CSS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -55,9 +78,9 @@
   </div>
   <div id="fullpage">
     <!-- Work with us -->
-    <div class="section work-with-us">
-      <div class="container d-flex flex-column flex-1 justify-content-center">
-        <div class="pt-5 d-none d-md-block"></div>
+    <div class="section vacancy">
+      <div class="container d-flex flex-column flex-1 justify-content-center full-height">
+        <!-- <div class="pt-5 d-none d-md-block"></div> -->
         <div class="row justify-content-center">
           <div class="col-lg-10 col-xl-9 text-center">
             <h2 class="section-title big">Work With Us</h2>
@@ -66,12 +89,10 @@
               to create companies that can bring down the goliaths.</p>
             <div class="pt-10 d-none d-sm-block"></div>
             <div class="pt-5 d-block d-sm-none"></div>
-            <a href="#vacancy" class="btn btn-primary">See open positions</a>
+            <a href="#vacancies" class="btn btn-primary" id="scroll">See open positions</a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section vacancy">
       <div class="d-flex flex-column">
         <div class="justify-content-center">
           <div class="bg-1c">
@@ -107,23 +128,23 @@
           </div>
         </div>
       </div>
-      <div class="container d-flex flex-column">
+      <div class="container d-flex flex-column vacancies" id="vacancies">
         <div class="row justify-content-center flex-column">
           <h2 class="section-title diff">Current Open positions</h2>
           <div class="vacancy-list">
             <h3 class="company-name">HoneyGuide</h3>
+            <p>HoneyGuide is an online travel agency specializing in mountain travel. We make sure that men and
+              mountains meet more often. (Of course women too, but the rhyme was too good to pass.)</p>
             <ul>
               <li>
                 <a href="careers/honeyguide-technical-lead.html">
                   <div class="pos-name">Technical Lead</div>
-                  <div class="no-pos">1 Position</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
               <li>
                 <a href="careers/honeyguide-freelance-content-writers.html">
                   <div class="pos-name">Freelance Content Writers</div>
-                  <div class="no-pos">&nbsp;&nbsp;</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
@@ -131,56 +152,49 @@
           </div>
           <div class="vacancy-list">
             <h3 class="company-name">Bhoos</h3>
+            <p>Bhoos is a mobile gaming company specializing in card games. We bring people together through games that
+              they grew up with.</p>
             <ul>
               <li>
                 <a href="careers/bhoos-frontend-developer.html">
-                  <div class="pos-name">Frontend Developer (1 year experience)</div>
-                  <div class="no-pos">1 Position</div>
+                  <div class="pos-name">Frontend Developer</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
               <li>
                 <a href="careers/bhoos-software-development-assistant.html">
                   <div class="pos-name">Software Development Intern</div>
-                  <div class="no-pos">1 Position</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
-              <!-- <li>
-                <a href="#">
-                  <div class="error">Sorry! No open positions right now.</div>
-                </a>
-              </li> -->
             </ul>
           </div>
           <div class="vacancy-list">
             <h3 class="company-name">Diagnal</h3>
+            <p>Diagnal is an electronic medical record system loved by both doctors and patients alike. We make
+              technology less painful for doctors and health records more accessible to patients.</p>
             <ul>
               <li>
                 <a href="careers/diagnal-backend-developer.html">
                   <div class="pos-name">Backend Developer</div>
-                  <div class="no-pos">&nbsp;&nbsp;</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
               <li>
                 <a href="careers/diagnal-ux-designer.html">
                   <div class="pos-name">UI/UX Designer</div>
-                  <div class="no-pos">&nbsp;&nbsp;</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
               <li>
                 <a href="careers/diagnal-frontend-developer.html">
                   <div class="pos-name">Frontend Developer</div>
-                  <div class="no-pos">2 Position</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
               <li>
                 <a href="careers/diagnal-software-development-assistant.html">
                   <div class="pos-name">Software Development Interns</div>
-                  <div class="no-pos">2 Position</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
@@ -188,18 +202,18 @@
           </div>
           <div class="vacancy-list">
             <h3 class="company-name">Plutus</h3>
+            <p>Plutus makes accounting and tax management software for SMEs. We marry intuitive bookkeeping with
+              actionable insights so businesses can focus on the thing that matters most: growth.</p>
             <ul>
               <li>
                 <a href="careers/plutus-technical-lead.html">
                   <div class="pos-name">Technical Lead</div>
-                  <div class="no-pos">&nbsp;&nbsp;</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
               <li>
                 <a href="careers/plutus-frontend-developer.html">
                   <div class="pos-name">Frontend Developer</div>
-                  <div class="no-pos">2 Position</div>
                   <div class="pos-action"><img src="images/right.png" alt="" width="24" height="24"></div>
                 </a>
               </li>
@@ -268,10 +282,10 @@
       //Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors: ['work-with-us', 'vacancy'],
+      anchors: ['vacancy'],
       navigation: false,
       navigationPosition: 'right',
-      navigationTooltips: ['work-with-us', 'vacancy'],
+      navigationTooltips: ['vacancy'],
       showActiveTooltip: false,
       slidesNavigation: false,
       slidesNavPosition: 'bottom',
@@ -296,7 +310,6 @@
       offsetSections: false,
       resetSliders: false,
       fadingEffect: false,
-      // normalScrollElements: '#element1, .element2',
       scrollOverflow: true,
       scrollOverflowReset: false,
       scrollOverflowOptions: null,
@@ -311,33 +324,9 @@
       //Design
       controlArrows: true,
       verticalCentered: true,
-      // sectionsColor: ['#ccc', '#fff'],
-      // paddingTop: '3em',
-      // paddingBottom: '10px',
-      // fixedElements: '#header, .footer',
       responsiveWidth: 0,
       responsiveHeight: 0,
-      // responsiveSlides: false,
-      // parallax: false,
-      // parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
-      // cards: false,
-      // cardsOptions: { perspective: 100, fadeContent: true, fadeBackground: true },
-
-      //Custom selectors
-      // sectionSelector: '.section',
-      // slideSelector: '.slide',
-
       lazyLoading: true,
-
-      //events
-      onLeave: function (origin, destination, direction) { },
-      afterLoad: function (origin, destination, direction) { },
-      afterRender: function () { },
-      afterResize: function (width, height) { },
-      afterReBuild: function () { },
-      afterResponsive: function (isResponsive) { },
-      afterSlideLoad: function (section, origin, destination, direction) { },
-      onSlideLeave: function (section, origin, destination, direction) { }
     });
   </script>
   <script>
@@ -346,6 +335,13 @@
       $('#menu-overlay').toggleClass('open');
     });
   </script>
+  <!-- <script>
+    $("#scroll").click(function (e) {
+      e.preventDefault();
+      var aid = $("#vacancies");
+      $('html,body').animate({ scrollTop: $(aid).offset().top }, 'slow');
+    });
+  </script> -->
 </body>
 
 </html>
